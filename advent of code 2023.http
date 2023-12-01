@@ -1,0 +1,6 @@
+@advent_of_code_2023_HostAddress = http://localhost:5017
+
+GET {{advent_of_code_2023_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
