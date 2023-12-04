@@ -48,7 +48,6 @@ namespace advent_of_code_2023.Services.DayFour
                     for (int i=0; i<card.MatchingNumbers();i++)
                     cardList[card.getId()+i].addInstance(card.getNumberOfInstance());
                 }
-                Console.WriteLine(card.getNumberOfInstance());
                 cardTotal+=card.getNumberOfInstance();
             }
             return cardTotal;
