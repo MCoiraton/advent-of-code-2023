@@ -1,6 +1,7 @@
 //global using advent_of_code_2023.Models;
 global using advent_of_code_2023.Services.DayOne;
 global using advent_of_code_2023.Services.DayFour;
+global using advent_of_code_2023.Services.DayTwo;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -10,6 +11,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddScoped<IDayOneService, DayOneService>();
 builder.Services.AddScoped<IDayFourService, DayFourService>();
+builder.Services.AddScoped<IDayTwoService, DayTwoService>();
 
 var app = builder.Build();
 
